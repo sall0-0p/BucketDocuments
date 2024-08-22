@@ -1,5 +1,6 @@
 package com.bucketdocs.bucketDocuments;
 
+import com.bucketdocs.bucketDocuments.utils.Messages;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class BucketDocuments extends JavaPlugin {
@@ -10,6 +11,7 @@ public final class BucketDocuments extends JavaPlugin {
         // Plugin startup logic
         plugin = this;
         saveDefaultConfig();
+        Messages.load();
     }
 
     @Override
